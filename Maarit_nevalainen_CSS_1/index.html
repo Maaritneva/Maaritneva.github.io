@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pizza and beer moments</title>
+<link rel=stylesheet href="style.css">
+<style>
+    body {
+         background-color: #FFF5E8; text-size-adjust: 100%; -webkit-text-size-adjust: 100%;
+         }
+</style>
+</head>
+<body>
+<header>
+    <nav class="links">
+    <a href="#account">Create account</a>
+    <a href="#media">Media links</a><br>
+    </nav><br>
+    <h1 id="title">Best value for your bucks!</h1><br>    
+    <p class="fillIn">Choose the options that suit you best, and you will receive suggestions based on restaurants and the times of day when the item is available at the lowest price</p><br>
+</header>
+<main>   
+     <section id="pizza" class="formselection">
+        <form action="/submit" method="post" autocomplete="on"><br><br>
+        <h2>Enter your choices</h2>
+            <div class="choosings">
+            <article>
+                <label class= "value1" for="budget">What is the maximum amount you are willing to spend on food and drinks per person?</label><br>
+                <select id="budget" name="money"> <!---budget-->
+                    <option value="5-10">5-10</option>
+                    <option value="10-15">10-15</option>
+                    <option value="15-20">15-20</option>
+                    <option value="20-25">25-22</option>
+                    <option value="25">above 25</option>
+                </select><br><br>            
+            <label class="select">Discount type</label><br> <!--what kind of discount-->
+                <input type="radio" name="discounts" value="studentdiscount">Eligibility for student discount<br>
+                <input type="radio" name="discounts" value="Happy hour">Happy hour<br>
+                <input type="radio" name="discounts" value="S-bonus">S-bonus deals<br><br>
+            <label class="select">What kind of drink you are looking for?</label><br><!--discount drinks -->
+                <input type="radio" name="drink" value="beer">Beer<br>
+                <input type="radio" name="drink" value="Wine bottle">Wine bottle<br>
+                <input type="radio" name="drink" value="Wine by Glass">Wine by glass<br>
+                <input type="radio" name="drink" value="softdrink">Soft drink<br>
+                <input type="radio" name="drink" value="NoDrink">No Drink<br><br>
+            <label class="select">What kind of food you are looking for?</label><br>
+                <input type="radio" name="pizza" value="Food">Any food<br>
+                <input type="radio" name="pizza" value="Hamburger">Hamburger<br>
+                <input type="radio" name="pizza" value="Pizza">Pizza<br>
+                <input type="radio" name="pizza" value="No Food">No food<br><br>
+            <label class="select">Food options</label><br> <!--food details-->
+                <input type="checkbox" name="glutenfreeoptions">Gluten Free options<br>
+                <input type="checkbox" name="veganoptions">Vegan options<br>
+                <input type="checkbox" name="vegetarianoptions">Vegetarian options<br>
+                <input type="checkbox" name="meatoptions">Meat options<br>
+                <input type="checkbox" name="seafoodoptions">Sea food options<br>
+                <input type="checkbox" name="Nopreference">No preference<br><br>
+            <label class="select">Restaurant requirements, choose your preferences:</label><br>
+                <input type="checkbox" name="beer" value="beer">Selling beer<br>
+                <input type="checkbox" name="wine" value="wine">Selling wine<br>
+                <input type="checkbox" name="spirits" value="spirits">Selling spirits and other alcohol<br>
+                <input type="checkbox" name="noalcohol" value="noalcohol">No alcohol license<br>
+                <input type="checkbox" name="outdoorarea" value="outdoorarea">Outdoor seating Area<br>
+                <input type="checkbox" name="indoorarea" value="indoorarea">Indoor seating Area<br>
+                <input type="checkbox" name="music" value="music">Music played in the dining area<br>
+                <input type="checkbox" name="dogs" value="dogs">Dogs Welcome<br>
+                <input type="checkbox" name="kids" value="kids">Kids corner<br>
+                <input type="checkbox" name="nopref" value="noPreference">No preference<br><br>
+             
+            <label>Select your city</label><br> <!--area-->
+            <input list="city" name="place">
+                <datalist id="city">
+                <option value="Helsinki">helsinki</option>
+                <option value="Espoo">espoo</option>
+                <option value="Tampere">tampere</option>
+                <option value="Joensuu">joensuu</option>
+                <option value="Vantaa">vantaa</option>
+                <option value="Turku">turku</option>
+                </datalist><br><br>        
+        <h3>Distance from the central in km</h3>
+            <p class="km">Kilometres <span id="demo"></span></p>
+            <input type="range" min="1" max="15" value="1" id="myRange">
+              
+            <script>
+                var slider = document.getElementById("myRange");
+                var output = document.getElementById("demo");
+                output.innerHTML = slider.value;
+                slider.oninput = function() {
+                output.innerHTML = this.value;
+                }       
+            </script><br>
+        </article>
+        <p class="submit">Submit the form to see a list of discounts based on your choices</p>
+            <input class="button" type="submit" value="Submit" aria-label="Submit to receive the discount info"><br><br>
+        </div>   
+        </form>
+    </section><br>
+    <div class ="accountdetails generalfont">
+     <label id="adult">To continue, we need to confirm you are 18 or older. Please enter your age:</label>
+     <input type="number" name="age" min="18" max="120" required><br>
+    </div>
+   <section id="booking" class="booking"> <!--creating account details-->
+        <article class="accountdetails generalfont">
+        <h3 class="accountinfo">Account</h3>        
+        <p class="generalfont">Create an account to book a table and get your personal discount code.<br>
+            You will receive your unique discount code which gives you extra 10% of the restaurant you find via this website</p><br>
+        <div class ="form-container">
+            <label class="name details">Full name: <input type="text" placeholder="Your name here"></label><br>
+            <label class="name">Email: <input type="text" placeholder="@" required pattern="@"></label><br>
+            <label for="password">Create a password:</label><input type="password" id="password" name="passwordrequired"><br><br>
+        </div>
+            <label class="lab">Special requests or questions to the restaurant:<br>
+                    <textarea class="special-requests" name="questions" rows="5" cols="35" placeholder="Special requests or questions to the restaurant" minlength="0" maxlength="50">
+                   </textarea></label><br><br>
+            <label>Estimate number of guests <input type="number" name="quests" min="1" max="20"></label><br><br>
+                    <label for="selection" id="list">I wish to join to the mailing list and receive information about the latest offers</label><br>
+                        <select id="selection" name="join">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        <option value="later">Maybe later</option>
+                        </select><br><br>
+                <p class="submit">Submit the form to create account</p>
+                <input class="button" type="submit" value="Submit" aria-label="Submit to receive the discount info"><br><br>
+                    <aside id="quote"><em>The cheapest pizza or beer is waiting for you just behind few cliks</em>
+                    </aside><br>
+                <label class="small-text">Customer referral code for DiscountPzzaLvrs use (DISABLED)
+                <input class="small-text" type="text" value="Pzza6273546" disabled></label><br>
+                <label class="small-text">Discount code (readonly). The number will be generated after submission.
+                <input class="small-text" type="text" value="Cheapxxxxxx" readonly></label><br>
+            </article><br>
+    </section>
+        <div id="media">   
+            <p class="small-print">In the meantime, check out these great restaurant picks in Helsinki!</p>
+                <iframe class="myVideo" width="460" height="315" src="https://www.youtube.com/embed/x74SBY9tvpk?si=kETgoTK7YAp6-fO6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <figure class="image-container">
+                   <img src="red-purchase-bag.jpg"
+                    alt="logo"
+                    width="150">
+                    <figcaption class="small-text">Official DiscountPzzaLvrs ltd. logo</figcaption>
+                </figure>
+            </div> 
+</main>
+<footer>
+    <input type="checkbox" id="toggle-contact" class="toggle-box">
+        <label for="toggle-contact" class="contact-btn">Contact details</label>
+    <p class="secret">DiscountPzzaLvrs ltd. tel. 123123123 email: doesnotexist@com</p>
+</footer>
+</body>
+</html>

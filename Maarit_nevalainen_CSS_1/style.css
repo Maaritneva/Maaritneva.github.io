@@ -1,0 +1,212 @@
+/*-- universal reset --*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { /*-- background color--*/
+       
+    background-color: #FFF5E8;
+    font-family: sans-serif; 
+    min-width: 200px;
+    max-width: 800px;
+    min-height: 200px;  
+    margin: 20px 10px;
+                 
+}      
+/*-- selectors --*/
+aside {
+    text-align: center; 
+    color: #FF8A00;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.test option { /* Descendant combinators*/
+    text-align: center; 
+    font-weight: bold
+}
+
+h2, h3 { /*multiple class selectors */
+    text-size-adjust: initial;
+    font-family: 'Raleway, sans-serif';
+    font-size: 25px;
+    margin-bottom: 15px; font-weight: bold;
+    padding-bottom: 10px;
+}
+
+h3.accountinfo { /*specific h3 style */
+    background-color: #FFF5E8;
+    border: solid lightgray 1px;
+}
+
+.links {margin-top: 15px; 
+    text-align: center;        
+}
+
+#title { /* id style */
+    color: #FF8A00; 
+    text-align: center;
+    font-family: 'Raleway sans-serif';
+    font-size: 50px;
+}
+p.fillIn { /*specific p style */
+    background-color: rgb(246, 223, 192, 0.5); 
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    background-position: center;
+    font-size: 15px;
+    margin: 15px;
+    padding: 20px;
+    border: orange dotted
+}
+
+.value1 {
+        font-weight: bold; color: #3A3A3A ;
+}
+
+.km {
+    font-size: 12px; font-style: italic;
+}
+
+.choosings {
+    background-color: rgba(255, 255, 255, 0.4); /* kform background */
+    padding: 5px;
+    border-radius: 10px;
+    min-width: 300px;
+    max-width: 800px; 
+    margin: 0 auto;
+}    
+ 
+.formselection {
+    margin: 15px;
+    border: 1px solid #ccc; 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/20/09/06/bowl-1842294_1280.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;  
+    border: black solid 2px;
+}
+.formselection label.value1,
+.formselection p,
+.formselection span {
+    color: #3A3A3A;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+.name.details {font-weight: bold; display: block;/*Multiple class selector */
+} 
+
+.button:hover { /*pseudo button goes grey when hovered*/
+     background-color: darkgray;
+}
+.accountdetails {
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.6);
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+                   
+.small-print {
+    font-size: 15px;
+    font-weight: bold;
+    font-display: block;
+    text-align: center;
+}
+.generalfont {font-family: 'Nunito sans-serif';
+    }   
+
+    .myVideo {
+    height: auto;           /* measurements */
+    display: block;        
+    margin: 20px auto;      
+    border-radius: 5px;    /* round conrners */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
+    border: 1px solid #ccc; 
+}
+
+.booking {
+    padding: 5px 2px;
+    border: 2px;    
+}
+#adult {
+    color: red; 
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 200px;   
+}
+
+.special-requests {
+  min-height: 100px;   /* min 100px height */
+  max-height: 300px;   /* max 300 height */
+  overflow: auto;      /* overflow */
+  width: 50%;         
+  box-sizing: border-box; 
+}
+
+.lab {
+  text-align: left;
+  display: block;  
+}
+
+.secret {
+  visibility: hidden; /* hidden*/
+}
+
+img[src="red-purchase-bag.jpg"] { /* attribute selector*/
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Piilotetaan checkbox */
+.toggle-box {
+    display: none;
+}
+.secret {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.toggle-box:checked + .contact-btn + .secret {
+    visibility: visible;
+    opacity: 1;
+}
+.contact-btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background: #FF8A00;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.small-text {font-style: italic; font-size: 12px;}
+
+.submit{font-weight: bold;}
+
+
+
+
+/*-- 
+Pääväri: #FF8A00 — pehmeä oranssi (ruoka-fiilis)
+
+Tukiväri 1: #FFF5E8 — kermaisen vaalea tausta
+
+Tukiväri 2: #3A3A3A — tumma harmaa teksteille
+
+Tehosteväri: #36C98E — raikas vihreä (hyvä hintamerkintään, “lowest price”) --*/

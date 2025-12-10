@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'MontserratCustom';
+    src: url('Montserrat-Regular.woff2') format('woff2'),
+         url('Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f1edef;
+    background-repeat: repeat;
+}
+
+main {
+    padding-bottom: 80px;
+}
+
+nav {
+    text-align: center; 
+}
+
+h1.title { /* pages h1 style */
+    position: absolute;
+    text-transform: uppercase;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(24, 23, 23, 0.8); /* black and bit obelesce */
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+    margin: 15px 0;
+    letter-spacing: 4px;
+    z-index: 2;
+}
+
+header {
+    background-color: #f1edef;
+    height: auto;
+    width: 100vw;
+    margin: 0;
+    padding: 0;    
+}
+
+.vadirums{ /* main header pic */
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover; 
+    object-position: center;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.intro {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid #003366;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #d2b48c;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    color: #4b3f36;
+    line-height: 1.6;
+    overflow: auto; 
+}
+
+.gen { /* main page paragrapsh */
+    margin-top: 0;
+    text-align: center;
+    color: rgba(14, 11, 10, 0.85); 
+    word-spacing: 0.2rem;  
+}
+
+.othergen {
+    text-transform: uppercase;
+    text-align: center;
+    word-spacing: initial;
+    line-height:170%;
+    margin: 30px auto;
+    padding: 30px; 
+    max-width: 600px;
+}
+
+.nav-container  { 
+    position: sticky;
+    top: 0;
+    background-color: #f1edef;
+    padding: 10px;
+    z-index: 1000;
+    color: #003366;
+    font-weight: 600;
+    text-decoration: underline;     
+}
+
+.nav-container a { /* style of the links, relative position */
+    margin-right: 20px;
+    color: #003366;
+    font-weight: 600;
+    text-decoration: underline;      
+}
+
+a:hover {  /* pseudoclass for links  color change when hovering*/
+    color: blue;
+}
+
+.banner{
+    position: relative; /* h1 will be on top */
+    width: 100%;
+    height: 400px; 
+}
+.accommodation { /* picture styles float element */
+    max-width: 300px; 
+    float: left;
+    margin: 0 0 10px 10px;
+}
+
+.quote {
+    font-family: 'Great Vibes';
+    font-style: italic;
+    color: #444;
+    font-size: 2em;
+    clear: both;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    background-color: #e3ded5;
+    position: relative;
+    padding: 20px; 
+    margin-top: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: flex-start;    
+}
+.gallery img { /* this uses inline-block display */
+    display: inline-block;
+    object-fit: cover;
+    height: 300px;
+    width: 350px;
+    margin: 0;
+    position: relative;
+}
+
+.block {
+    width: 800px;
+    height: 100%;
+    background-color: #e3ded5;
+    padding: 20px;
+    overflow: hidden;
+    margin-left: 0;
+    position: relative;
+}
+
+.figtext {
+    font-size: small;
+    font-style:italic;
+    align-items: flex-start;
+    color: rgba(17, 14, 12, 0.522);
+}
+
+p {
+    padding: 10px;
+    margin: 10px 15px;
+    text-align: justify;
+    color: rgba(17, 14, 12, 0.522); 
+}
+
+.fixed-link { /* fixed element */
+    position: fixed;
+    top: 5px;
+    right: 20px;
+    background: #f1edef;
+    padding: 6px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    z-index: 9999;
+
+}
+
+h2 {
+    text-align: center; 
+}
+
+.block {
+    display: block;   
+    padding: 10px;
+    border-radius: 6px;
+    margin: 30px;
+    text-align: left;
+}
+
+.hero { 
+     position: relative;       
+     width: 100%;
+} 
+
+.footer { /* static position */
+    position: static;
+    padding: 20px;
+    color: hsla(35, 100%, 50%, 0.93);
+    background: linear-gradient(to right, #D9C5A6, #C7996E);
+    border: 2px solid #8B6D5C;
+    min-height: 60px;
+    box-sizing: border-box;
+}
+footer .quote {
+    display: block;
+    width: 100%;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.image-wrapper img {
+    max-width: 300px;
+    display: block;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+/* Hover-efect */
+.image-wrapper:hover img {
+    transform: scale(1.1);
+    
+}
+
+/* images wrapped to the left  */
+.image-wrapper.left {
+    float: left;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+
+.image-wrapper.right {
+    float: left;
+    margin-right: 5px;
+    margin-left: -50px; /* on the top pf the other */
+}
+
+
+p {
+    text-align: justify;
+}

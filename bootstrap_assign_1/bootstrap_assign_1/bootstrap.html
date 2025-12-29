@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Grid Example</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Main navigation">
+    <div class="container-fluid">
+     <a class="navbar-brand" href="#"> <img src=logo.jpg height="60" class="img fluid border rounded" alt="logo"></a> <!-- brand logo -->      
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navcontent" aria-controls="navcontent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>  
+    </div>
+      <div class="collapse navbar-collapse" id="navcontent">
+          <ul class="navbar-nav flex-row ms-auto"> <!-- regular nav links -->
+              <li class="nav-item me-3">
+              <a class="nav-link active" href="awards.html">Awards</a></li>  
+              <li class="nav-item me-3">
+              <a class="nav-link" href="about.html">Commercial</a></li>
+          
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Weddings</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Summer</a></li>
+                  <li><a class="dropdown-item" href="#">Winter action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  </ul>
+              </li>
+            </ul>        
+      </div>
+  </nav>
+  <section class="hero de-flex align-items-center justify-content-center bg-dark text-white">
+  <div class="container">
+    <div class="row align-items-center min-vh-50">
+      <div class="text-center">
+        <h1 class="display-4 fw-bold">LH photo</h1>
+        <p class="lead">Colourful. Emotional. Unapologetically you. 
+          </p>
+        <a href="https://www.no-page.com" class="btn btn-secondary btn-lg">
+          To my website
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="row d-flex justify-content-around">
+    <div class="col-lg-8">
+        <h2>about me</h2>
+        <p class="mb-5">Your photoshoot is not a performance — it’s a story. I capture it honestly and cinematically, blending light and mood to create images full of emotion, colour, and you.</p>
+    </div>
+</div>
+
+<div class="container"> <!-- container div -->  
+  <div class="row justify-content-center text-center"> <!-- row div -->  
+    <div class="col-md-5 mb-3">
+      over 10 years of expience
+    </div>   
+    
+    <div class="col-md-5 mb-3">
+      Exhibitionist at FinnPhoto wedding exhibition <a href="https://finnfoto.fi/finnfoto-galleria/lempaala-ideapark/">"stories about love"</a>
+    </div>
+  </div>
+</div>
+<div class="container mt-4"> <!-- three card elements -->
+  <div class="d-flex flex-row flex-nowrap gap-3 overflow-auto">
+    <!-- Card 1 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="koira.jpg" class="card-img-top card-img-tall" alt="koira" style="min-width: 250px;">
+        <div class="card-body">
+          <h5 class="card-title">Commercial</h5>
+          <p class="card-text">
+            Gigs to corporate; elevated, high-end imagery and visual storytelling for bold, modern brands that stand out.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="koira2.jpg" class="card-img-top card-img-tall" alt="koira" style="min-width: 250px;">
+        <div class="card-body">
+          <h5 class="card-title">Property</h5>
+          <p class="card-text">
+            Refined imagery for exceptional spaces. Crafted visuals for high-end properties. Elevated visuals for luxury living.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="koira3.jpg" class="card-img-top card-img-tall" alt="koira" style="min-width: 250px">
+        <div class="card-body">
+          <h5 class="card-title">Wedding</h5>
+          <p class="card-text">
+            Capturing your story with elegance, passion, and timeless luxury.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+    
+  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-2 mt-4"> 
+      <a href="contactme.html" class="btn btn-dark px-4 py-2 border"> Contact Me
+    </a>
+  </div> 
+  
+    
+<!-- carousel start -->
+        
+<section class="px-4 pt-5 my-5 pb-5 text-center bg-light rounded shadow" aria-label="Testimonials">    
+          <h2 class="display-5 fw-bold text-black mb-4" id="Testimonials">Rumours</h2>
+
+  <div id="carouselExample" class="carousel slide" data-bs-ride="false" >
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <p class="fst-italic">I take the time to connect with you, ensuring I am the perfect match to capture your story just the way you envision it."</p>
+      </div>
+    
+    <div class="carousel-item">
+      <div class="d-flex align-items-center justify-content-center min-vh-25"></div>
+          <p class="fst-italic mb-0">Best photographer everknow to mankind"</p>
+    </div></div>
+    <div class="carousel-item">
+        <p class="fst-italic">If you want a photographer who values connection as much as creativity, you’re in the right place"</p>
+      </div>
+    
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+    </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

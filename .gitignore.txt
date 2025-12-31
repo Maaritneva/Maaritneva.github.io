@@ -1,0 +1,22 @@
+# Node / build files
+node_modules/
+package-lock.json
+package.json
+
+# Sass / SCSS sources (ei tarvita GitHubissa)
+scss/
+sass/
+
+# Turhat JS-kirjastot (ei käytetä HTML:ssä)
+js/tiny-slider.js
+js/flatpickr.min.js
+js/glightbox.min.js
+js/counter.js
+js/custom.js   # Jos et tarvitse custom.js toimintoja
+
+# Maps ja debug-tiedostot
+*.map
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
